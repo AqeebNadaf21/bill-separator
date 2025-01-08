@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../../logo.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bill Splitter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bill-container">
+            <div class="inside_left">
+                <div class="input-container">
+                    <label for="amount">Bill</label>
+                    <div class="amount-container">
+                        <span>&#8377; </span>
+                        <input type="number" class="amount" name="amount" id="amount" autofocus required />
+                    </div>
+                </div>
+                <div class="tip-container">
+                    <label>Select Tip</label>
+                    <div class="btn-tip">
+                        <button class="btn" data-tip="5">5&#37;</button>
+                        <button class="btn" data-tip="10">10&#37;</button>
+                        <button class="btn" data-tip="15">15&#37;</button>
+                        <button class="btn" data-tip="25">25&#37;</button>
+                        <button class="btn" data-tip="50">50&#37;</button>
+                        <button class="btn" data-tip="75">75&#37;</button>
+                    </div>
+                    <div class="customTip">
+                        <input type="number" id="customTip" placeholder="Custom Tip (%)" />
+                    </div>
+                </div>
+                <div class="people-container">
+                    <label for="person">Number of People</label>
+                    <input type="number" id="person" placeholder="1" min="1" value="1" />
+                </div>
+                <button id="generate-bill" class="btn">Generate Bill</button>
+                <button id="reset" class="btn">Reset</button>
+            </div>
+            <div class="inside_right">
+                <h2>Results</h2>
+                <div class="result-container">
+                    <div class="tipValue">Tip Amount: &#8377; 0.00</div>
+                    <div class="totalValue">Total Amount: &#8377; 0.00</div>
+                    <div class="bill">Each Person's Bill: &#8377; 0.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- ========================================================================================== -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../../logo.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bill Splitter</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bill-container">
+            <div class="inside_left">
+                <div class="input-container">
+                    <label for="amount">Bill</label>
+                    <div class="amount-container">
+                        <span>&#8377; </span>
+                        <input type="number" class="amount" name="amount" id="amount" autofocus />
+                    </div>
+                </div>
+                <div class="tip-container">
+                    <label>Select Tip</label>
+                    <div class="btn-tip">
+                        <button class="btn" data-tip="5" disabled>5&#37;</button>
+                        <button class="btn" data-tip="10" disabled>10&#37;</button>
+                        <button class="btn" data-tip="15" disabled>15&#37;</button>
+                        <button class="btn" data-tip="25" disabled>25&#37;</button>
+                        <button class="btn" data-tip="50" disabled>50&#37;</button>
+                        <button class="btn" data-tip="75" disabled>75&#37;</button>
+                    </div>
+                    <div class="customTip">
+                        <input type="number" id="customTip" placeholder="Custom Tip" disabled />
+                    </div>
+                </div>
+                <div class="people-container">
+                    <label for="person">Number of People</label>
+                    <input type="number" id="person" placeholder="1" min="1" value="1" />
+                </div>
+                <button id="generate-bill" class="btn" disabled>Generate Bill</button>
+                <button id="reset" class="btn">Reset</button>
+            </div>
+            <div class="inside_right">
+                <h2>Results</h2>
+                <div class="result-container">
+                    <div class="tipValue">Tip Amount: &#8377; 0.00</div>
+                    <div class="totalValue">Total Amount: &#8377; 0.00</div>
+                    <div class="bill">Each Person's Bill: &#8377; 0.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> -->
